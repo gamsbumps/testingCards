@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+  <img [src]="produto?.imagem" />
+  <h2>{{ produto?.descricao }}</h2>
+  <h3>{{ produto?.preco | currency : "BRL" }}</h3>
+  <p>Estoque disponível</p>
+  <ion-label>
+    Quantidade:
+    <input type="number" [(ngModel)]="quantidade" min="1" />
+    unidade(s)
+  </ion-label>
+  <p>{{ produto?.quantidadeEstoque }} unidade(s) em estoque</p>
+  <ion-button expand="block" (click)="adicionarAoCarrinho()">Adicionar ao carrinho</ion-button>
+</ion-content>

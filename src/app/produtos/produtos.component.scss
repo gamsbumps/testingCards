@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+ion-content {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ion-card {
+  width: 40%;
+  height: 40%;
+  display:inline-block;
+}
+
+.titulo {
+  font-size: 16px;
+}
+
+.conteudo {
+  text-align: justify;
+  font-size: 12px;
+  color: white;
+}
+
+ion-button {
+  --background: rgb(32, 32, 214);
+  --border-radius: 0;
+  --background-hover: #9ce0be;
+  --background-activated: #88f4be;
+  --color: white;
+  font-size: 18px;
+}
+

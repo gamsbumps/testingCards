@@ -1,0 +1,25 @@
+<!-- <div class="principal"><div *ngFor="let produto of produtos">
+  <h2>{{ produto.descricao }}</h2>
+</div>
+</div> -->
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngFor="let produto of produtos">
+    <div>
+      <a routerLink="/produtos/{{ produto.id }}">
+        <img [src]="produto.imagem" />
+        <ion-card-header>
+          <ion-card-title class="titulo">{{
+            produto.descricao
+          }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content class="conteudo">
+          {{ produto.descricaoPreco }}
+        </ion-card-content>
+      </a>
+    </div>
+  </ion-card>
+  <ion-button [routerLink]="['']">Página inicial</ion-button></ion-content
+>
